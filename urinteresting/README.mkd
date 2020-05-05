@@ -10,3 +10,9 @@ With Go:
 ▶ go get -u github.com/tomnomnom/hacks/urinteresting
 ```
 
+My Modified Go file
+
+```
+▶ go get -u github.com/bugf1nd3r/hacks/urinteresting
+```
+
