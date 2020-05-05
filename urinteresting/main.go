@@ -60,6 +60,9 @@ func main() {
 				".do",
 				".jsp",
 				".jspa",
+				".env",
+				".config",
+				".js",
 			}
 
 			p := strings.ToLower(u.EscapedPath())
@@ -84,7 +87,9 @@ func main() {
 				strings.Contains(p, "proxy") ||
 				strings.Contains(p, "test") ||
 				strings.Contains(p, "tmp") ||
-				strings.Contains(p, "temp")
+				strings.Contains(p, "temp") ||
+			        strings.Contains(p, "config") ||
+			        strings.Contains(p, "user")
 		},
 
 		// non-standard port
@@ -185,7 +190,7 @@ func qsCheck(k, v string) bool {
 func isBoringStaticFile(u *url.URL) bool {
 	exts := []string{
 		// OK, so JS could be interesting, but 99% of the time it's boring.
-		".js",
+		
 
 		".html",
 		".htm",
