@@ -63,7 +63,7 @@ func main() {
 				".env",
 				".config",
 				".js",
-				"Jenkinsfile"
+				"Jenkinsfile",
 			}
 
 			p := strings.ToLower(u.EscapedPath())
